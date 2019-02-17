@@ -1,0 +1,14 @@
+.devMobile #jim-container .ui-page {
+  overflow-x: hidden;
+}
+.non_jim_mobile #simulation {
+  overflow-x: hidden;
+}
+.web #simulation {
+  overflow-x: hidden;
+}
+#s-26b49e3d-197e-4fae-9b96-e2da9aa3776c > #loadMark {
+  width: 1px;
+  visibility: hidden;
+  display: none;
+}
