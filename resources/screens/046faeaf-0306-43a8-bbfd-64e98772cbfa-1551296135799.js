@@ -117,7 +117,67 @@ jQuery("#simulation")
         ];
         jEvent.launchCases(cases);
       }
+    } else if(jFirer.is("#s-Image_1")) {
+      if(jFirer.data("jimHasToggle")) {
+        jFirer.removeData("jimHasToggle");
+        jEvent.undoCases(jFirer);
+      } else {
+        jFirer.data("jimHasToggle", true);
+        event.backupState = true;
+        event.target = jFirer;
+        cases = [
+          {
+            "blocks": [
+              {
+                "actions": [
+                  {
+                    "action": "jimShow",
+                    "parameter": {
+                      "target": [ "#s-muuda_kolooniat" ]
+                    },
+                    "exectype": "serial",
+                    "delay": 0
+                  }
+                ]
+              }
+            ],
+            "exectype": "serial",
+            "delay": 0
+          }
+        ];
+        jEvent.launchCases(cases);
+      }
     } else if(jFirer.is("#s-Button_8")) {
+      if(jFirer.data("jimHasToggle")) {
+        jFirer.removeData("jimHasToggle");
+        jEvent.undoCases(jFirer);
+      } else {
+        jFirer.data("jimHasToggle", true);
+        event.backupState = true;
+        event.target = jFirer;
+        cases = [
+          {
+            "blocks": [
+              {
+                "actions": [
+                  {
+                    "action": "jimShow",
+                    "parameter": {
+                      "target": [ "#s-muuda_taru" ]
+                    },
+                    "exectype": "serial",
+                    "delay": 0
+                  }
+                ]
+              }
+            ],
+            "exectype": "serial",
+            "delay": 0
+          }
+        ];
+        jEvent.launchCases(cases);
+      }
+    } else if(jFirer.is("#s-Image_2")) {
       if(jFirer.data("jimHasToggle")) {
         jFirer.removeData("jimHasToggle");
         jEvent.undoCases(jFirer);
