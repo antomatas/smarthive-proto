@@ -1,5 +1,5 @@
 jQuery("#simulation")
-  .on("click", ".s-7767ed83-1d5e-474f-968d-4456927b6987 .click", function(event, data) {
+  .on("click", ".s-8398071a-d483-4c54-9469-02166be34755 .click", function(event, data) {
     var jEvent, jFirer, cases;
     if(data === undefined) { data = event; }
     jEvent = jimEvent(event);
@@ -75,7 +75,7 @@ jQuery("#simulation")
       jEvent.launchCases(cases);
     }
   })
-  .on("click", ".s-7767ed83-1d5e-474f-968d-4456927b6987 .toggle", function(event, data) {
+  .on("click", ".s-8398071a-d483-4c54-9469-02166be34755 .toggle", function(event, data) {
     var jEvent, jFirer, cases;
     if(data === undefined) { data = event; }
     jEvent = jimEvent(event);
